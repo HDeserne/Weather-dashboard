@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets\style.css">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center bg-dark text-white p-4">Weather Dashboard</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <form id="search-weather" class="border-bottom pb-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Search for a City:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="city-name"
+                placeholder="Flagstaff"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+          <!-- Need recent search buttons to be placed here that are built off of an array that we have stored inside of localStorage -->
+        </div>
+        <!-- End Left Column -->
+        <!-- <div class="text-center col-md-9 h4 ">Weather Details</div> -->
+        <div class="col-md-8 offset-md- justify-content-center" class="weather">
+      <!-- here we populate the 5 day forecast -->
+      <div class="card text-start">
+  <div class="card-header">
+    Weather Details
+  </div>
+  <div class="card-body" style="height: 260px">
+    <h3 class="card-title" id='inputtedName'></h3>
+    <ul >
+      <h6 id='temp'></h6>
+      <h6 id='humidity'></h6>
+      <h6 id='wind'></h6>
+      <h6 id='uvIndex'></h6>
+    </ul>
+  </div>
+  
+  </div>
+</div>
+</div>
+</div>
+<h3 class="title text-center mt-4 mb-4">5 day Forecast</h3>
+<div class="container">
+  <div class="row">
+    <!-- <div class='col-md-8 offset-md'> -->
+<div class="card" style="width: 15rem; height: 15rem">
+  <div class="card-body">
+    <h5 class="card-title">Tomorrow</h5>
+    <h6 id='tempOne'></h6>
+      <h6 id='humidityOne'></h6>
+      <h6 id='windOne'></h6>
+     
+  </div>
+</div>
+<div class="card" style="width: 15rem; height: 15rem">
+  <div class="card-body">
+    <h5 class="card-title">In Two Days</h5>
+     <h6 id='tempTwo'></h6>
+      <h6 id='humidityTwo'></h6>
+      <h6 id='windTwo'></h6>
+  </div>
+</div>
+<div class="card" style="width: 15rem; height: 15rem">
+  <div class="card-body">
+    <h5 class="card-title">In Three Days</h5>
+     <h6 id='tempThree'></h6>
+      <h6 id='humidityThree'></h6>
+      <h6 id='windThree'></h6>
+  </div>
+</div>
+<div class="card" style="width: 15rem; height: 15rem">
+  <div class="card-body">
+    <h5 class="card-title">In Four Days</h5>
+     <h6 id='tempFour'></h6>
+      <h6i id='humidityFour'></h6i>
+      <h6 id='windFour'></h6>
+  </div>
+</div>
+<div class="card" style="width: 15rem; height: 15rem">
+  <div class="card-body">
+    <h5 class="card-title">In Five Days</h5>
+    <h6 id='tempFive'></h6>
+      <h6 id='humidityFive'></h6>
+      <h6 id='windFive'></h6>
+  </div>
+</div>
+</div>
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="assets\script.js"></script>
+</html>
